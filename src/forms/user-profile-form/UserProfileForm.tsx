@@ -1,4 +1,4 @@
-import { userProfileFormSchema } from "@/schemas/user-profile-schema";
+import { userProfileFormSchema } from "@/schemas";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
