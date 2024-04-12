@@ -43,3 +43,7 @@ export const manageRestaurantFormSchema = z
 		message: 'Image file or image URL must be provided.',
 		path: ['imageFile'],
 	});
+
+export const searchSchema = z.object({
+	searchQuery: z.string({ required_error: 'Restaurant name is required' }),
+});

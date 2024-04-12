@@ -16,7 +16,7 @@ const MenuSection = () => {
 		<div className='space-y-2'>
 			<div>
 				<h2 className='text-2xl font-bold'>Menu</h2>
-				<FormDescription>Create he menu for your restaurant</FormDescription>
+				<FormDescription>Create the menu for your restaurant</FormDescription>
 			</div>
 
 			<FormField

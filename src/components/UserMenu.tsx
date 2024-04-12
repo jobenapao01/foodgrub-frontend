@@ -14,15 +14,14 @@ import { Link } from 'react-router-dom';
 
 const UserMenu = () => {
 	const { user, logout } = useAuth0();
+
 	return (
 		<DropdownMenu>
 			<DropdownMenuTrigger>
 				<UserAvatar img={user?.picture} />
 			</DropdownMenuTrigger>
 			<DropdownMenuContent>
-				<DropdownMenuLabel className='text-sm text-muted-foreground'>
-					{user?.email}
-				</DropdownMenuLabel>
+				<DropdownMenuLabel className='text-sm text-muted-foreground'>{user?.email}</DropdownMenuLabel>
 				<DropdownMenuSeparator className='bg-orange-500' />
 				<DropdownMenuItem>
 					<Link
