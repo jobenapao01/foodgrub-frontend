@@ -112,7 +112,6 @@ const SearchPage = () => {
 						key={restaurant._id}
 					/>
 				))}
-
 				<PaginationSelector
 					page={results.pagination.page}
 					pages={results.pagination.pages}

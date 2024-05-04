@@ -1,4 +1,3 @@
-import { Button } from './ui/button';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from './ui/dropdown-menu';
 
 type Props = {
@@ -25,19 +24,13 @@ const SortOptionsDropdown = ({ onChange, sortOption }: Props) => {
 	const selectedSortLabel = SORT_OPTIONS.find((option) => option.value === sortOption)?.label || SORT_OPTIONS[0].label;
 	return (
 		<DropdownMenu>
-			<DropdownMenuTrigger className='cursor-pointer'>
-				<Button
-					variant='outline'
-					className='w-full'
-				>
-					Sort by: {selectedSortLabel}
-				</Button>
-			</DropdownMenuTrigger>
+			<DropdownMenuTrigger className='cursor-pointer'>Sort by: {selectedSortLabel}</DropdownMenuTrigger>
 			<DropdownMenuContent>
 				{SORT_OPTIONS.map((option) => (
 					<DropdownMenuItem
 						className='cursor-pointer'
 						onClick={() => onChange(option.value)}
+						key={option.value}
 					>
 						{option.label}
 					</DropdownMenuItem>

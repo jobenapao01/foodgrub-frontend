@@ -41,17 +41,17 @@ const ManageRestaurantForm = ({ onSave, isLoading, restaurant, btnText }: Props)
 			return;
 		}
 
-		// const deliveryPriceFormatted = parseInt((restaurant.deliveryPrice / 100).toFixed(2));
+		const deliveryPriceFormatted = parseInt(restaurant.deliveryPrice.toFixed(2));
 
-		// const menuItemsFormatted = restaurant.menuItems.map((menuItem) => ({
-		// 	...menuItem,
-		// 	price: parseInt((menuItem.price / 100).toFixed(2)),
-		// }));
+		const menuItemsFormatted = restaurant.menuItems.map((menuItem) => ({
+			...menuItem,
+			price: parseInt(menuItem.price.toFixed(2)),
+		}));
 
 		const updatedRestaurant = {
 			...restaurant,
-			// deliveryPrice: deliveryPriceFormatted,
-			// menuItems: menuItemsFormatted,
+			deliveryPrice: deliveryPriceFormatted,
+			menuItems: menuItemsFormatted,
 		};
 
 		form.reset(updatedRestaurant);
