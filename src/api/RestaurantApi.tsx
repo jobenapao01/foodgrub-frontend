@@ -36,7 +36,7 @@ export const useGetRestaurant = (restaurantId?: string) => {
 		const response = await fetch(`${API_BASE_URL}/api/restaurant/${restaurantId}`);
 
 		if (!response.ok) {
-			throw new Error('Faile to get restaurant');
+			throw new Error('Failed to get restaurant');
 		}
 
 		return response.json();

@@ -16,6 +16,12 @@ const MobileNavLinks = ({ logout }: Props) => {
 				Manage Restaurant
 			</Link>
 			<Link
+				to='/order-status'
+				className='flex items-center p-2 font-bold text-black bg-white rounded-lg hover:text-white hover:bg-orange-500'
+			>
+				Order Status
+			</Link>
+			<Link
 				to='/user-profile'
 				className='flex items-center p-2 font-bold text-black bg-white rounded-lg hover:text-white hover:bg-orange-500'
 			>

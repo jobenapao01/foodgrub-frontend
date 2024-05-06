@@ -33,6 +33,14 @@ const UserMenu = () => {
 				</DropdownMenuItem>
 				<DropdownMenuItem>
 					<Link
+						to='/order-status'
+						className='w-full p-1 font-bold rounded-md hover:bg-orange-500 hover:text-white'
+					>
+						Order Status
+					</Link>
+				</DropdownMenuItem>
+				<DropdownMenuItem>
+					<Link
 						to='/user-profile'
 						className='w-full p-1 font-bold rounded-md hover:bg-orange-500 hover:text-white'
 					>
